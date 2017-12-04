@@ -1,4 +1,4 @@
-function [X1, X2, T, C, dN,m,theta]=simulate(n,beta0,beta1,tau,v1,v2)
+function [X1, X2, T, C, dN,m,theta]=simulate(n,beta0,beta1,tau)
 
 X1= unifrnd(0,1,n,1); X2=repmat(binornd(1,0.5),[n,1]); 
 %X1 is uniform(0,1), X2 is bernoulli (0,0.5)
